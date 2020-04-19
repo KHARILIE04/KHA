@@ -60,7 +60,7 @@ echo color("green"," =================================== \n");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
-					sleep(1);sleep(2);sleep(3);
+					sleep(10);
 				}
 				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
 				$message = fetch_value($code1,'"message":"','"');
@@ -74,7 +74,7 @@ echo color("green"," =================================== \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(1); sleep(2); sleep(3);
+						sleep(10);
 					}
 					sleep(3);
 					$boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
@@ -90,7 +90,7 @@ echo color("green"," =================================== \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(1); sleep(2); sleep(3);
+						sleep(5);
 					}
 					sleep(3);
 					$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
@@ -101,7 +101,7 @@ echo color("green"," =================================== \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(1); sleep(2); sleep(3);
+						sleep(5);
 P
 					}
 					sleep(3);
